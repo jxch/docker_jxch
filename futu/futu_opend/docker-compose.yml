@@ -1,0 +1,16 @@
+services:
+  futu_opend:
+    image: jxch/futu-opend:latest
+    ports:
+      - "11111:11111"
+    environment:
+      LOGIN_ACCOUNT: "account"
+      LOGIN_PWD: "password"
+      LANG_MODE: "en"
+      API_IP: "0.0.0.0"
+      API_PORT: "11111"
+      CONSOLE_MODE: "1"
+      NO_MONITOR: "1"
+      LOG_LEVEL: "info"
+      PRICE_REMINDER_PUSH: "1"
+      AUTO_HOLD_QUOTE_RIGHT: "1"    
